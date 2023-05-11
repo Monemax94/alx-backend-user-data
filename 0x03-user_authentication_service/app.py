@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
-"""Basic Flask app module
+"""A simple Flask app with user authentication features.
 """
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, abort, redirect
+
+from auth import Auth
 
 
 app = Flask(__name__)
+AUTH = Auth()
 
 
-@pp.route("/", methods=["GET"], strict_slashes=False)
+@app.route("/", methods=["GET"], strict_slashes=False)
 def index() -> str:
     """GET /
     Return:
