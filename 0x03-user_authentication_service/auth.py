@@ -2,7 +2,7 @@
 """A module for authentication-related routines.
 """
 import bcrypt
-# from uuid import uuid4
+from uuid import uuid4
 from typing import Union
 from sqlalchemy.orm.exc import NoResultFound
 
