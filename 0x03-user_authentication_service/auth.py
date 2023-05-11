@@ -2,12 +2,12 @@
 """A module for authentication-related routines.
 """
 import bcrypt
-#from uuid import uuid4
-#from typing import Union
-#from sqlalchemy.orm.exc import NoResultFound
+# from uuid import uuid4
+# from typing import Union
+# from sqlalchemy.orm.exc import NoResultFound
 
-#from db import DB
-#from user import User
+# from db import DB
+# from user import User
 
 
 def _hash_password(password: str) -> bytes:
